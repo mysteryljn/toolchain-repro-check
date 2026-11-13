@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "toolchain": "synthetic-arm-gcc",
+  "generated_at": "2026-11-13T00:01:00Z",
+  "tools": [
+    {
+      "name": "gcc",
+      "version": "13.3.0",
+      "path": "/opt/toolchains/arm/bin/arm-none-eabi-gcc",
+      "sha256": "3333333333333333333333333333333333333333333333333333333333333333",
+      "target": "arm-none-eabi"
+    },
+    {
+      "name": "ld",
+      "version": "2.41",
+      "path": "/opt/toolchains/arm/bin/arm-none-eabi-ld",
+      "sha256": "2222222222222222222222222222222222222222222222222222222222222222",
+      "target": "arm-none-eabi"
+    }
+  ]
+}

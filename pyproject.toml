@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "toolchain-repro-check"
+version = "0.1.0"
+description = "Compare toolchain lock manifests and gate reproducible builds"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "mysteryljn" }]
+dependencies = []
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+]
+
+[project.scripts]
+toolchain-repro-check = "toolchain_repro_check.cli:main"
+
+[tool.setuptools.package-data]
+toolchain_repro_check = ["fixtures/*.json"]
